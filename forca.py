@@ -60,5 +60,6 @@ if y == 0:
         print('\n\nTa de hack, não errou uma meu mano!')
     else:
         print('\n\nParabéns você acertou!!!')
+        print(f'Restavam {qtdChances} chances')
 else:
     print(f'\n\nA palavra era: {palavra}\nvocê perdeu ;-;')
