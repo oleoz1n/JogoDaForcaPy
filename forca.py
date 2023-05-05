@@ -1,5 +1,6 @@
 palavra = input("Qual a palavra secreta?: ").upper()
 qtdChances = int(input("Qual a quantidade de chances?: "))
+perfect = qtdChances
 AaZ = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 letrasUsadas = []
 print('\n'*20)
@@ -55,6 +56,9 @@ for ni in forca:
     if ni == '_':
         y+=1
 if y == 0:
-    print('\n\nParabéns você acertou!!!')
+    if qtdChances == perfect:
+        print('\n\nTa de hack, não errou uma meu mano!')
+    else:
+        print('\n\nParabéns você acertou!!!')
 else:
     print(f'\n\nA palavra era: {palavra}\nvocê perdeu ;-;')
