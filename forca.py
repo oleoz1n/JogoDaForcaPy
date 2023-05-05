@@ -1,7 +1,7 @@
 palavra = input("Qual a palavra secreta?: ").upper()
 qtdChances = int(input("Qual a quantidade de chances?: "))
 perfect = qtdChances
-AaZ = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+AaZ = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z','Ç','Á', 'À', 'Ã', 'Â','É', 'È', 'Ê','Í', 'Ì', 'Î','Ó', 'Ò', 'Õ', 'Ô','Ú', 'Ù', 'Û']
 letrasUsadas = []
 print('\n'*20)
 forca = []
