@@ -4,12 +4,14 @@ def reload():
 [1]Continuar jogando
 [2]Sair do jogo''')
         resp = input(": ")
+        print('\n')
         if resp == '1':
             forca()
         elif resp == '2':
             break
 
 def forca():
+    invalid = []
     palavra = input("Qual a palavra secreta?: ").upper()
     qtdChances = int(input("Qual a quantidade de chances?: "))
     perfect = qtdChances
@@ -39,11 +41,21 @@ def forca():
         if n in uReplace:
             array_palavra[letra] = 'U'
         letra += 1
+    for n in array_palavra:
+        erro = 0
+        if n in AaZ:
+            pass
+        else:
+            invalid.append(n)
+            erro += 1
+    if erro > 0:
+        print(f'{invalid} Caracter inválido')
+        reload()
+        exit()
     for n in range(len(palavra)):
         forca += "_"
     for n in range(len(forca)):
         print(forca[n],end = ' ')
-
     while qtdChances > 0:
         y = 0
         for ni in forca:
